@@ -6,7 +6,7 @@ My custom react template using webpack, babel, postcss
 
 simply use on your empty folder project
 ```
-git pull https://github.com/brtkev/react-light-template
+npm install git+https://github.com/brtkev/react-light-template.git
 ```
 and then install
 ```

@@ -22,5 +22,16 @@ const moveFilesTo = () => {
 
 }
 
+const preSetup = () => {
+	let packagePath = './template/package.json';
+	let data = JSON.parse( fs.readFileSync(packagePath, 'utf8'));
+	data.name = newDir.split('\\').pop();
+
+	fs.writeFileSync(packagePath, JSON.stringify(data), 'utf8');
+
+	console.log(data.name);
+}
+
+preSetup();
 moveFilesTo();
 
