@@ -1,0 +1,23 @@
+{
+  "name": "@brtkev/react-light-template",
+  "version": "1.0.0",
+  "description": "a not so heavy react template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brtkev/react-light-template.git"
+  },
+  "keywords": [
+    "template",
+    "react"
+  ],
+  "author": "brtkev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brtkev/react-light-template/issues"
+  },
+  "homepage": "https://github.com/brtkev/react-light-template#readme"
+}
