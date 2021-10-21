@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');	
 const dir = path.join(__dirname, '/template');
-const newDir = path.resolve(process.cwd());
+const newDir = path.resolve(process.cwd(), '../..');
 
-
+console.log(newDir)
 const moveFilesTo = () => {
 	let listDir = [ ...fs.readdirSync(dir).map(file =>  `${dir}/${file}` )];
 
@@ -23,5 +23,5 @@ const moveFilesTo = () => {
 
 }
 
-moveFilesTo();
+// moveFilesTo();
 
