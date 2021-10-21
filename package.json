@@ -4,7 +4,7 @@
   "description": "a not so heavy react template",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node index.js"
+    "preinstall": "node index.js"
   },
   "repository": {
     "type": "git",
