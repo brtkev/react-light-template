@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/brtkev/react-light-template/issues"
   },
-  "homepage": "https://github.com/brtkev/react-light-template#readme"
+  "homepage": "https://github.com/brtkev/react-light-template#readme",
+  "bin": "./index.js"
 }
