@@ -37,7 +37,7 @@ moveFilesTo();
 
 const { exec } = require("child_process");
 
-exec("cd ../.. && npm up", (error, stdout, stderr) => {
+exec("cd ../.. && npm up && npm rm react-light-template", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
