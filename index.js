@@ -37,8 +37,7 @@ moveFilesTo();
 
 const { exec, spawn } = require("child_process");
 
-
-currCommand = spawn('npm', ['rm', 'react-light-template'], { 'cwd' : newDir});
+currCommand = spawn('ls',['-lh'] ,{ 'cwd' : newDir});
 
 currCommand.stdout.on('data', (data) => {
 console.log(`stdout: ${data}`);
