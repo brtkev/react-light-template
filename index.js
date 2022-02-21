@@ -35,17 +35,33 @@ const preSetup = () => {
 preSetup();
 moveFilesTo();
 
-const { exec } = require("child_process");
+const { exec, spawn } = require("child_process");
 
-exec("cd ../.. && npm up && npm rm react-light-template", (error, stdout, stderr) => {
-    if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    console.log(`stdout: ${stdout}`);
+
+currCommand = spawn('npm', ['rm', 'react-light-template'], { 'cwd' : newDir});
+
+currCommand.stdout.on('data', (data) => {
+console.log(`stdout: ${data}`);
 });
+
+currCommand.stderr.on('data', (data) => {
+console.error(`stderr: ${data}`);
+});
+
+currCommand.on('close', (code) => {
+console.log(`child process exited with code ${code}`);
+});
+  
+
+// exec("cd ../.. && npm rm react-light-template  && npm up ", (error, stdout, stderr) => {
+//     if (error) {
+//         console.log(`error: ${error.message}`);
+//         return;
+//     }
+//     if (stderr) {
+//         console.log(`stderr: ${stderr}`);
+//         return;
+//     }
+//     console.log(`stdout: ${stdout}`);
+// });
 
