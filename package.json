@@ -2,8 +2,8 @@
   "name": "react-light-template",
   "version": "1.0.0",
   "description": "a not so heavy react template",
-  "bin" : {
-    "new" : "./bin/new.js"
+  "scripts": {
+    "postinstall": "mkdir $1"
   },
   "repository": {
     "type": "git",
