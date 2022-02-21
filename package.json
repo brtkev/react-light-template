@@ -2,7 +2,7 @@
   "name": "react-light-template",
   "version": "1.0.0",
   "description": "a not so heavy react template",
-  "main": "index.js",
+  "main": "./libs/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brtkev/react-light-template.git"
