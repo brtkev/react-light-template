@@ -11,7 +11,7 @@ const jsRules = {
     }
   }
 
-const cssRule = {
+const cssRules = {
   test: /\.css$/,
   use: ['style-loader', 'css-loader','postcss-loader']
 }
