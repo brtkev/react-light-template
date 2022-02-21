@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a not so heavy react template",
   "bin": {
-    "react-light-template" : "./bin/react-light-template.js"
+    "react-light-template" : "react-light-template.js"
   },
   "scripts": {
     "postinstall": "mkdir $1"
