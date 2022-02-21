@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a not so heavy react template",
   "bin" : {
-    "new" : "./bin/index.js"
+    "new" : "./bin/new.js"
   },
   "repository": {
     "type": "git",
