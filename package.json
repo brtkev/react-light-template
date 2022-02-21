@@ -2,9 +2,8 @@
   "name": "react-light-template",
   "version": "1.0.0",
   "description": "a not so heavy react template",
-  "main": "index.js",
-  "scripts": {
-    "preinstall": "node index.js"
+  "bin" : {
+    "new" : "./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +13,10 @@
     "template",
     "react"
   ],
-  "author": "brtkev",
+  "author": {
+    "name" : "brtkev",
+    "url" : "https://github.com/brtkev"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/brtkev/react-light-template/issues"
