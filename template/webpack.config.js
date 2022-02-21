@@ -11,6 +11,11 @@ const jsRules = {
     }
   }
 
+const cssRule = {
+  test: /\.css$/,
+  use: ['style-loader', 'css-loader','postcss-loader']
+}
+
 const assetRule = {
   test: /\.png$/,
   type: 'asset'      
